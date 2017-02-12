@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/soccerseason"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Real Madrid"
+        android:textColor="#5d5d5d"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/homeTeam"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Real Madrid"
+        android:textColor="#5d5d5d"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/awayTeam"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Real Madrid"
+        android:textColor="#5d5d5d"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Real Madrid"
+        android:textColor="#5d5d5d"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Real Madrid"
+        android:textColor="#5d5d5d"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/matchday"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Real Madrid"
+        android:textColor="#5d5d5d"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/medio"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="-"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/goalsHomeTeam"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="0"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/medio"/>
+
+    <TextView
+        android:id="@+id/goalsAwayTeam"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="0"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/medio"/>
+
+
+    <ImageView
+        android:id="@+id/imagenHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/goalsHomeTeam"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/homeTeamName"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text=""
+        android:textColor="#5d5d5d"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/imagenHome"/>
+
+
+    <ImageView
+        android:id="@+id/imagenAway"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/goalsAwayTeam"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/awayTeamName"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Real Madrid"
+        android:textColor="#5d5d5d"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imagenAway"/>
+
+</RelativeLayout>

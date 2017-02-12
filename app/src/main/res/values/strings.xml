@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Futbol para Todos</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_temporadas">TemporadasActivity</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="title_activity_fixture">FixtureActivity</string>
+    <string name="temporadas">Seasons</string>
+    <string name="title_activity_equipo">EquipoActivity</string>
+    <string name="jugador_posicion">Position:</string>
+    <string name="jugador_camiseta">Tshirt:</string>
+    <string name="jugador_fecha_nac">Birth Date:</string>
+    <string name="jugador_nacionalidad">Nationality:</string>
+    <string name="jugador_contrato">Contract Until:</string>
+    <string name="jugador_valor">Market value:</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8178489486911148/8600245112</string>
+    <string name="action_app">More Apps"</string>
+    <string name="action_compartir">Share"</string>
+    <string name="compartir">I wish to share with you this application.</string>
+</resources>

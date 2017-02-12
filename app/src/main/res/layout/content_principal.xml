@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.PrincipalActivity"
+    tools:showIn="@layout/activity_principal"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentTop="true"
+        />
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/adView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+                <LinearLayout android:id="@+id/tab1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#000000">
+
+                        <TextView
+                            android:id="@+id/position"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text=""
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:layout_toRightOf="@+id/escudo"
+                            />
+
+                        <TextView
+                            android:id="@+id/teamName"
+                            android:layout_width="190dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Equipo"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:layout_toRightOf="@+id/position" />
+
+                        <TextView
+                            android:id="@+id/points"
+                            android:gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="PTS"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+
+                            android:layout_toLeftOf="@+id/playedGames"/>
+
+                        <TextView
+                            android:id="@+id/playedGames"
+                            android:gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="PJ"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:layout_toLeftOf="@+id/wins" />
+
+                        <TextView
+                            android:id="@+id/wins"
+                            android:gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="PG"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:layout_toLeftOf="@+id/draws"/>
+
+                        <TextView
+                            android:id="@+id/draws"
+                            android:gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="PE"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:layout_toLeftOf="@+id/losses" />
+
+                        <TextView
+                            android:id="@+id/losses"
+                            android:gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="PP"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:layout_toLeftOf="@+id/goalDifference" />
+
+                        <TextView
+                            android:id="@+id/goalDifference"
+                            android:gravity="center"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="DG"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight = "true"
+                            />
+
+                        <TextView
+                            android:id="@+id/linksTeam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+                        <TextView
+                            android:id="@+id/crestURI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+
+
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/list_tabla"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/tab2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/list_fixture"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
